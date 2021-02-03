@@ -1,0 +1,53 @@
+@name: lumu;
+
+.@{name}-swipe {
+    overflow: hidden;
+    position: relative;
+    &__container {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+    &__vertical {
+        flex-direction: column;
+    }
+    &__item {
+        width: 100%;
+        height: 100%;
+        flex-shrink: 0;
+    }
+    &__dots {
+        display: flex;
+        position: absolute;
+        bottom: 12px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 3px;
+        background-color: rgba(255,255,255,.5);
+        cursor: pointer;
+        &:not(:last-child) {
+            margin-right: 6px;
+        }
+    }
+    &__dots--vertical {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 12px;
+        transform: translateY(-50%);
+    }
+    &__dots--vertical &__dot {
+        &:not(:last-child) {
+            margin-bottom: 6px;
+            margin-right: 0;
+        }
+    }
+    &__dot--active {
+        background-color: #fff;
+    }
+}
