@@ -93,6 +93,8 @@ const App = () => {
 
 [示例地址](http://49.235.254.79/lumu-swipe/)
 
+[代码拆解](https://juejin.cn/post/6925239227999322119/)
+
 ## License
 
 MTI © [wenlei0617](https://github.com/wenlei0617)
