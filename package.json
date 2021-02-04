@@ -1,6 +1,6 @@
 {
   "name": "@lumu/swipe",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "react lumu-swipe",
   "author": "wenlei0617",
   "license": "MTI",
@@ -24,7 +24,7 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "react": "^16.0.0"
+    "react": "^16.8.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^4.2.4",
