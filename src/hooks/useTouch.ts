@@ -31,7 +31,7 @@ const useTouch = () => {
     const end = () => {
         const tempDeltaX = deltaX.current;
         const tempDeltaY = deltaY.current;
-        const timediff = new Date().getTime() - time.current;
+        const timediff = time.current ? new Date().getTime() - time.current : 0;
         reset();
         return {
             deltaX: tempDeltaX,
